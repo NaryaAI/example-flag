@@ -7,11 +7,11 @@ struct Call {
 }
 
 contract Agent {
-    function run(Call[] calldata calls) public {
+    function callback(Call[] calldata calls) external {
         for (uint256 i = 0; i < calls.length; i++) {
             calls[i].to.call(calls[i].callData);
         }
     }
 
-    function nop() public {}
+    function nop() external {}
 }

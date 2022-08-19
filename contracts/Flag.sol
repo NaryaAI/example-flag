@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: Unlicense
-pragma solidity >=0.8.0;
+pragma solidity 0.8.0;
 
-/// #invariant {:msg "false"} flag1 == true;
 contract Flag {
     bool public flag0 = true;
     bool public flag1 = true;

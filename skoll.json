@@ -1,6 +1,0 @@
-{
-    "name": "Flag",
-    "contracts": [
-        "contracts/Flag.sol"
-    ]
-}
