@@ -11,6 +11,12 @@ contract FlagTest is Agent {
         flag = new Flag();
     }
 
+    function testSet(int x, int y) external {
+        flag.set0(x);
+        flag.set1(y);
+        assert(flag.flag1());
+    }
+
     function invariantFlagIsTrue() external view {
         require(flag.flag1(), "flag1 is false");
     }
